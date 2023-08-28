@@ -58,18 +58,27 @@ A manera de resumen de algunos de estos tipos de termocuplas, se siguiente figur
 Una *señal balanceada* se trata de una señal que es transmitida de manera simétrica por medio de dos conductores (cable balanceado) en donde la copia es enviada en contrafase o invertida, lo cual permite que una interferencia o ruido captado por la señal sea cancelado al llegar al destino y reinvertir la copia de la señal y sumarlas, obteniendo el doble del mensaje original recuperado.
 
 **Aplicación:** Su aplicación sobresale en los casos de transferencia de señales a largas distancias o ambientes complicados (ruido/interferencia), donde el objetivo es la calidad de la señal. Así, se encuentran casos como las comunicaciones, instrumentación delicada (mediciones), audio profesional, entre otras.
+
 <p align="center">
 <img src="/images/senal_balanceada.png" alt="Ejemplo de presencia de interferencia en señal balanceada" style="width:35%;" />
 </p>
+
 Una *señal no balanceada* se trata de una mensaje enviado de manera más simple, ya que solo se cuenta con un medio vivo y referencia (tierra), de manera que dicho conductor de referencia protege con mallado la línea con el mensaje. Dichas señales suelen verse en conexiones de instrumentos musicales o equipos de buen desempeño.
 
 ### 4. ¿Qué es el aislamiento eléctrico entre dos tierras? ¿En los diseños electrónicos que ventajas tiene el aislamiento entre señales?
-
-RESPUESTA
+El asilamiento eléctrico entre dos tierras consiste en tener electricamente aislada la tierra de dos circuitos que estan interactuando entre si. Es importante tener este asilamiento ya que se pueden producir problemas al momento de leer las señales enviadas. Al no tener las tierras aisladas puede ocacionar que mucho ruido de transmita a la señal medida y por lo tanto no se tenga la mejor representacion de la entrada. 
 
 ### 5. Investigue diseños electrónicos para aislar eléctricamente señales DC o de baja frecuencia (<100Hz).
 
-RESPUESTA
+Los aisladores mas comúnes que se utilizan para poder tener dos señales aisladas electricamente son los optoacopladores y los optotransistores. Se va a enfocar esta investigación en los optoacopladores ya que son los mas comunes para circuitos electronicos de baja potencia.
+Un octoacoplador es un dispositivo electrónico que logra aislar la entrada con la salida mediante un sistema óptico. Este sistema óptico funciona como un switch que conecta la entrada con la salida pero sin pasar corriente. Esto es importante en la industria ya que muchas veces se necesita minimizar el ruido de una forma que los circuitos de entrada y salida esten electricamente aislados pero que de igual manera se puedan comunicar entre si. 
+
+<p align="center">
+<img src="/images/optocoupler.jpg" alt="Optoacoplador para asilamiento electrico" style="width:35%;" />
+</p>
+
+Como se puede ver en la imagen, la entrada y la salida tienen corrientes distintas y separadas por lo que la unica conexion entre los dos circuitos es la conexion optica que se tiene en el optoacoplador. 
+
 
 ### 6. Investigue diseños de amplificadores con ganancia programable.
 
@@ -124,13 +133,12 @@ $$SCT = 10\cdot log \left(\frac{P_{señal}}{P_{crosstalk}}\right)$$
 - Problema 3
 - http://telcoavi.es/blog/senal-balanceada-vs-senal-no-balanceada/
 - https://www.thomann.de/blog/es/cable-balanceado-y-no-balanceado-en-que-se-diferencian/
-- a
-- a
-- a
-- a
-- a
-- a
-- a
+- Problema 4
+- https://www.analog.com/en/technical-articles/breaking-ground-loops-with-functional-isolation.html
+- Problema 5
+- https://resources.altium.com/p/pcb-design-tutorial-tips-for-using-optocouplers-in-your-pcb-layout
+- https://www.nutsvolts.com/magazine/article/optocoupler-circuits
+- Problema 6
 - Problema 7
 - https://electrositio.com/relacion-de-rechazo-en-modo-comun-cmrr-y-el-amplificador-operacional/
 - https://www.tsc.uc3m.es/~fran/docencia/SyCT/Tema6_sesion1.pdf
