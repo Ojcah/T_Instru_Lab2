@@ -75,7 +75,7 @@ RESPUESTA
 
 Un amplificador operacional en configuracion de no inversor sirve para poder amplificar la señal con una ganancia que se ajusta con las resistencias en el circuito a elegir. Se puede ver en la siguiente foto como la resistencia conectada a la salida y a la terminal negativa del amplificador es la resistencia $R_f$, y la resistencia conectada a la entrada negativa y a tierra es la resistencia $R_i$. 
 <p align="center">
-<img src="/images/AmplificadorNoInversor.png" alt="Amplificador Operacional en modo No Inversor" style="width:35%;" />
+<img src="/images/AmplificadorNoInv.png" alt="Amplificador Operacional en modo No Inversor" style="width:35%;" />
 </p>
 Con esta notacion se puede decir que la ganancia de salida es la siguiente:
 
