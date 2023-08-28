@@ -52,6 +52,7 @@ A manera de resumen de algunos de estos tipos de termocuplas, se siguiente figur
 <p align="center">
 <img src="/images/termocupla.PNG" alt="Gráfico de tensión eléctrica contra temperatura de termocuplas" style="width:25%;" />
 </p>
+
 ### 3. ¿Qué es una señal balanceada y una no balanceada? ¿Qué aplicación tiene el uso de señales balanceadas?
 
 Una *señal balanceada* se trata de una señal que es transmitida de manera simétrica por medio de dos conductores (cable balanceado) en donde la copia es enviada en contrafase o invertida, lo cual permite que una interferencia o ruido captado por la señal sea cancelado al llegar al destino y reinvertir la copia de la señal y sumarlas, obteniendo el doble del mensaje original recuperado.
@@ -72,7 +73,17 @@ RESPUESTA
 
 ### 6. Investigue diseños de amplificadores con ganancia programable.
 
-RESPUESTA
+Un amplificador operacional en configuracion de no inversor sirve para poder amplificar la señal con una ganancia que se ajusta con las resistencias en el circuito a elegir. Se puede ver en la siguiente foto como la resistencia conectada a la salida y a la terminal negativa del amplificador es la resistencia $R_f$, y la resistencia conectada a la entrada negativa y a tierra es la resistencia $R_i$. 
+<p align="center">
+<img src="/images/AmplificadorNoInversor.png" alt="Amplificador Operacional en modo No Inversor" style="width:35%;" />
+</p>
+Con esta notacion se puede decir que la ganancia de salida es la siguiente:
+
+$$A_v = \frac{V_o}{V_{in}} = \frac{R_i+R_f}{R_i}$$
+
+o se puede ver como la tension de salida esta dada por la siguiente formula:
+
+$$V_o=V_{in}(\frac{R_i+R_f}{R_i})$$
 
 ### 7. Investigue como se mide el rechazo de modo común para una señal diferencial, y el rechazo de crosstalk entre dos canales.
 
